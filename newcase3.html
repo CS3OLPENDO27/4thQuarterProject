@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>Genetic Engineering</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if ((event.ctrlKey || event.metaKey) && (event.key === '+' || event.key === '-' || event.key === '=')) {
+                event.preventDefault();
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="topbar">
+        <ul>
+            <li><a href="homeunlock.html">Genetic Engineering</a></li>
+            <li><a href="newcase1.html"> Historical Background/Techniques in Genetic Engineering</a></li>
+            <li><a href="newcase2.html"> Applications in Medicine</a></li>
+            <li><a href="newcase3.html">Applications in Industry</a></li>
+            <li><a href="newcase4.html">Case Studies/Future Prospects</a></li>
+            <li><a  href="newhome.html"><img src="users.jpg"  style="width:50px"> <center>Logout</center></a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <center>
+            <br><br><br>
+            <div class="box">     
+                <h1 style="font-size:90px;">Applications in Industry</h1>  
+            </div>    
+        </center>
+        <br>
+        <div class="box-1">
+            <center>
+                <img src="bio.png" alt="cohen and boyer" class="content-image" width="500px" height="400px" style="margin: 0px 0px 0px -1207px">
+                <p style="margin:-376px 0px 0px 650px; text-align: left; color:white;font-size:25px;">
+                    Biofuel Production: Genetically modified microorganisms to produce ethanol.<br>
+                    Biofuel production has seen significant advancements with the use of genetically modified<br> microorganisms to produce
+                     ethanol. By engineering microorganisms such as yeast<br> or bacteria, scientists can enhance their ability to efficiently 
+                     convert organic matter, like agricultural<br> residues or biomass, into ethanol. These genetically modified microorganisms 
+                     can metabolize<br> a wider range of substrates, improve ethanol yields, and withstand harsher environmental conditions,<br> 
+                     leading to more sustainable and cost-effective biofuel production processes. This approach<br> offers a renewable alternative
+                      to fossil fuels, reducing greenhouse gas emissions and contributing<br> to energy security while utilizing renewable 
+                      resources. While challenges<br> remain, such as optimizing production efficiency and addressing potential ecological impacts,<br>
+                       genetically modified microorganisms hold immense promise for advancing biofuel<br> production and fostering a more sustainable energy future.
+                </p>
+            </center>
+        </div>
+        <br><br> <br><br>
+        <div class="box-2">
+            <center>
+                <img src="mediation.jpg" alt="cohen and boyer" class="content-image" width="500px" height="400px" style="margin: 0px 0px 0px -1207px">
+                <p style="margin:-376px 0px 0px 650px; text-align: left; color:white;font-size:25px;">
+                    Bioremediation: Using organisms to clean up pollutants.<br>
+                    Bioremediation harnesses the natural capabilities of organisms to clean up pollutants in various environments. 
+                    By deploying microorganisms, plants, or fungi, bioremediation processes target contaminants such as oil spills, 
+                    heavy metals, and industrial waste. These organisms metabolize or break down pollutants into less harmful substances, 
+                    effectively restoring ecosystems and mitigating environmental damage. Bioremediation offers a sustainable and cost-effective 
+                    alternative to traditional cleanup methods, reducing the need for harsh chemicals and minimizing disruption to ecosystems. While
+                     its effectiveness depends on factors like environmental conditions and the specific contaminants involved, bioremediation holds 
+                     immense potential for remedying pollution and promoting environmental restoration.
+                </p>
+            </center>
+        </div>
+        <br><br> <br><br>
+        <div class="box-3">
+            <center>
+                <img src="syn.png" alt="cohen and boyer" class="content-image" width="500px" height="400px" style="margin: 0px 0px 0px -1207px">
+                <p style="margin:-376px 0px 0px 650px; text-align: left; color:white;font-size:25px;">
+                    Synthetic Biology: Creating organisms with novel functions.<br>
+                    Synthetic biology involves the design and construction of new biological parts, devices, and systems with novel functions not found in nature.
+                     By combining principles from biology, engineering, and computer science, scientists can engineer organisms to perform specific tasks or
+                      produce valuable compounds. This field holds promise for applications ranging from pharmaceuticals and biofuels to environmental remediation
+                       and agriculture. Through techniques such as gene editing and DNA synthesis, synthetic biologists can customize genetic sequences to create 
+                       organisms tailored for various purposes. While still in its early stages, synthetic biology offers exciting opportunities for innovation and 
+                       addressing global challenges in health, energy, and sustainability.
+                </p>
+
+            </center>
+        </div>
+        <center>
+            <br>
+            <p style="font-size: 20px;color:white;">All rights reserved 2024</p>
+        </center>
+    </div> 
+</body>
+</html>
+<style>
+    .line-spacing {
+        line-height: 2; 
+        margin-bottom: -0.7em; 
+        display: block;
+    }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121216;
+    overflow: hidden; 
+}
+
+p {
+    font-size: 30px;
+    color:  #f50000f5;
+}
+
+h1 {
+    color: #f50000f5;
+}
+
+.topbar {
+    width: 100%;
+    background-color: #202124;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.topbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.topbar ul li {
+    display: inline;
+}
+
+.topbar ul li a {
+    display: block;
+    color: rgb(236, 236, 236);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.topbar ul li a:hover {
+    background-color: #575757;
+    color: white;
+}
+
+.content {
+    margin-top: 60px;
+    padding: 16px;
+    height: calc(100vh - 60px); 
+    overflow-y: auto; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+.content::-webkit-scrollbar {
+    display: none;
+}
+
+.box {
+    width: 1800px;
+    height: 200px;
+    padding: 20px;
+    background-color: #202124;
+    border-radius: 5px;
+}
+.box-1 {
+    width: 1800px;
+    height: 400px;
+    padding: 20px;
+    background-color: #202124;
+    border-radius: 5px;
+}
+.box-2 {
+    width: 1800px;
+    height: 400px;
+    padding: 20px;
+    background-color: #202124;
+    border-radius: 5px;
+}
+.box-3 {
+    width: 1800px;
+    height: 400px;
+    padding: 20px;
+    background-color: #202124;
+    border-radius: 5px;
+}
+.content-image {
+    width: 500px;
+    height: 400px;
+    margin: 0px 0px 0px 1100px;
+    transition: width 0.3s, height 0.3s, margin 0.3s;
+}
+
+.content-image:hover {
+    width: 700px; 
+    height: 500px; 
+    margin-left: 1000px;
+}
+
+</style>

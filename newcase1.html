@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>Genetic Engineering</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if ((event.ctrlKey || event.metaKey) && (event.key === '+' || event.key === '-' || event.key === '=')) {
+                event.preventDefault();
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="topbar">
+        <ul>
+            <li><a href="homeunlock.html">Genetic Engineering</a></li>
+            <li><a href="newcase1.html"> Historical Background/Techniques in Genetic Engineering</a></li>
+            <li><a href="newcase2.html"> Applications in Medicine</a></li>
+            <li><a href="newcase3.html">Applications in Industry</a></li>
+            <li><a href="newcase4.html">Case Studies/Future Prospects</a></li>
+            <li><a  href="newhome.html"><img src="users.jpg"  style="width:50px"> <center>Logout</center></a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <center>
+            <br><br><br>
+            <div class="box">     
+                <h1 style="font-size:90px;">Historical Background</h1>
+                <p>Early Experiments: Mendelian genetics laid the foundation.</p>
+            </div>    
+        </center>
+        <br>
+        <div class="box-1">
+            <center>
+                <p> 1973: First recombinant DNA molecule by Cohen and Boyer.</p>
+                <img src="cb.jpg" alt="cohen and boyer" class="content-image" width="450px" height="350px">
+            </center>
+        </div>    
+        <div class="box-2">
+            <center>
+                <p>1996: Cloning of Dolly the sheep.</p><br><br>
+                <img src="bcex.jpg" alt="cohen and boyer experiment" class="content-image" width="450px" height="350px">
+            </center>
+        </div><br>
+     
+            <div class="box-3">
+                <center>
+                <h1 style="font-size:90px;">Techniques in Genetic Engineering</h1><br>
+                </center>
+                <div class="img-container">
+                    <p class="image-caption">CRISPR-Cas9: A revolutionary gene-editing tool.<br>
+                        CRISPR: CRISPR stands for Clustered Regularly Interspaced Short Palindromic Repeats. These are short, repetitive DNA sequences<br>
+                         found in the genomes of bacteria and other microorganisms.<br>
+                         Cas9: Cas9 is a type of enzyme that can be programmed<br> to target specific DNA sequences.
+                         It acts like a pair of molecular scissors, capable of cutting DNA at precise locations.
+                    </p>
+                    <img src="genedit.webp" class="content-image" width="500px" height="400px">
+                </div>
+                <div class="img-container-1" style="margin: -400px 0px 0px 600px;">
+                    <p class="image-caption-1"> Gene Cloning: Replicating a specific gene.<br>
+                        Gene cloning is the process of replicating a specific gene by isolating it from an organism's DNA and inserting it into a vector,<br>
+                         such as a plasmid or a virus. This allows scientists to produce multiple copies of the gene, which can then be studied or used for various<br>
+                          purposes, such as producing proteins of interest or studying gene function. Gene cloning is a fundamental technique in molecular biology <br>
+                          and biotechnology, enabling researchers to manipulate and study genes in detail.
+                    </p>
+                    <img src="cloning.png" class="content-image" width="500px" height="400px">
+                </div>
+
+                <div class="img-container-2" style="margin: -400px 0px 0px 1185px;">
+                    <p class="image-caption-2"> Gene Therapy: Treating diseases by correcting defective genes.<br>
+                        Gene therapy is a medical approach aimed at treating diseases by correcting defective genes within a patient's cells.<br>
+                        This can be achieved by introducing functional copies of the faulty gene, repairing the existing gene, or modifying the gene's<br>
+                        expression. Gene therapy holds promise for treating a wide range of genetic disorders, including inherited diseases and certain<br>
+                        types of cancers. It represents a cutting-edge area of medical research with the potential to provide personalized and targeted<br>
+                        treatments for various conditions.
+                    </p>
+                    <img src="gent.webp" class="content-image" width="500px" height="400px">
+                </div>   
+            </div> 
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <center>
+                
+                <p style="font-size: 20px;color:white;">All rights reserved 2024</p>
+            </center>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
+</body>
+</html>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121216;
+    overflow: hidden; /* Hide the scrollbar on the body */
+}
+
+p {
+    font-size: 30px;
+    color:  #f50000f5;
+}
+
+h1 {
+    color: #f50000f5;
+}
+
+.topbar {
+    width: 100%;
+    background-color: #202124;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.topbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.topbar ul li {
+    display: inline;
+}
+
+.topbar ul li a {
+    display: block;
+    color: rgb(236, 236, 236);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.topbar ul li a:hover {
+    background-color: #575757;
+    color: white;
+}
+
+.content {
+    margin-top: 60px; 
+    padding: 16px;
+    height: calc(100vh - 60px);
+    overflow-y: auto; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+.content::-webkit-scrollbar {
+    display: none; 
+}
+
+.box {
+    width: 1800px;
+    height: 300px;
+    padding: 20px;
+    background-color: #202124;
+    border-radius: 5px;
+}
+.box-1 {
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    background-color: #202124;
+    border-radius: 5px;
+    margin: 0px 0px 0px 400px;
+}
+.box-2 {
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    background-color: #202124;
+    border-radius: 5px;
+    margin: -540px 0px 0px 990px;
+}
+.box-3 {
+    width: 1800px;
+    height: 300px;
+    padding: 20px;
+    background-color: #202124;
+    border-radius: 5px;
+    margin: 0px 0px 0px 0px;
+}
+
+.img-container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+.img-container-1 {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+.img-container-2 {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+.image-caption {
+    position: absolute;
+    bottom: -8%;
+    left: 0;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    color: white;
+    text-align: center;
+    opacity: 0; /* Hide the caption by default */
+    transition: opacity 0.3s ease;
+    font-size: 25px;
+}
+.image-caption-1 {
+    position: absolute;
+    bottom: -8%;
+    left: 0;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 24px;
+}
+.image-caption-2 {
+    position: absolute;
+    bottom: -8%;
+    left: 0;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 22px;
+}
+
+.img-container:hover .image-caption {
+    opacity: 1;
+}
+.img-container-1:hover .image-caption-1 {
+    opacity: 1; 
+}
+.img-container-2:hover .image-caption-2 {
+    opacity: 1; 
+}
+</style>

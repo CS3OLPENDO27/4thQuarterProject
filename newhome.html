@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>Genetic Engineering</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if ((event.ctrlKey || event.metaKey) && (event.key === '+' || event.key === '-' || event.key === '=')) {
+                event.preventDefault();
+            }
+        });
+
+        function handleLogin(event) {
+            event.preventDefault(); // Prevent the default form submission
+            const username = event.target.username.value;
+            const password = event.target.password.value;
+            
+            if (username === 'user' && password === 'pass') {
+                window.location.href = 'homeunlock.html';
+                alert('Welcome User!');
+            } else {
+                alert('Invalid username or password');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="topbar">
+        <ul>
+            <li><a href="newhome.html">Genetic Engineering</a></li>
+            <li><a ><img src="lock.webp"  style="width:20px"> Historical Background/Techniques in Genetic Engineering</a></li>
+            <li><a><img src="lock.webp"  style="width:20px">  Applications in Medicine</a></li>
+            <li><a><img src="lock.webp"  style="width:20px"> Applications in Industry</a></li>
+            <li><a><img src="lock.webp"  style="width:20px"> Case Studies/Future Prospects</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <center>
+            <br><br><br>
+            <div class="box">
+                <h1 style="font-size:90px;text-align: left;">Genetic Engineering:</h1>
+                <p style="text-align:left;"> Manipulating Genes for Various Purposes</p>
+                <p style="text-align:left;"> Genetic engineering is the process of altering the genetic material<br> of an organism to achieve desired traits or outcomes.</p>
+                <p style="text-align:left;">Used in medicine, agriculture, research, and industry.</p>
+                <div class="login-box">
+                    <center><h2>Login To See More</h2></center>
+                    <form onsubmit="handleLogin(event)">
+                        <div class="textbox">
+                            <input type="text" placeholder="Username" name="username" required>
+                        </div>
+                        <div class="textbox">
+                            <input type="password" placeholder="Password" name="password" required>
+                        </div>
+                        <input type="submit" class="btn" value="Login">
+                    </form>
+                </div>
+               
+            </div>
+            <br>
+        </center>
+        <div class="box-1">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="1.jpg" alt="Genetic Engineering Image" class="content-image" style="width:500px">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="indus.png" alt="Genetic Engineering Image" class="content-image" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="mede1.png" alt="Genetic Engineering Image" class="content-image" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="med.png" alt="Genetic Engineering Image" class="content-image" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="farm.png" alt="Genetic Engineering Image" class="content-image" style="width:100%">
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+        <center>
+            <br>
+            <p style="font-size: 20px;color:white;">All rights reserved 2024</p>
+        </center>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); 
+        }
+    </script>
+  
+</body>
+</html>
+
+<style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121216;
+    overflow: hidden; 
+}
+
+p {
+    font-size: 30px;
+    color:  #f50000f5;
+}
+
+h1 {
+    color: #f50000f5;
+}
+
+.topbar {
+    width: 100%;
+    background-color: #202124;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.topbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.topbar ul li {
+    display: inline;
+}
+
+.topbar ul li a {
+    display: block;
+    color: rgb(236, 236, 236);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.topbar ul li a:hover {
+    background-color: #575757;
+    color: white;
+}
+
+.content {
+    margin-top: 60px;
+    padding: 16px;
+    height: calc(100vh - 60px); 
+    overflow-y: auto; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+.content::-webkit-scrollbar {
+    display: none;
+}
+
+.box {
+    width: 1800px;
+    height: 500px;
+    padding: 20px;
+    background-color: #202124;
+    border-radius: 5px;
+}
+.box-1 {
+    width: 1800px;
+    height: 670px;
+    padding: 20px;
+    background-color: #202124;
+    border-radius: 5px;
+}
+
+
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: -620px 0px 0px 700px;
+}
+
+
+.mySlides {
+    display: none;
+}
+
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.login-box {
+    background-color: #202124;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: left;
+    color: #fff;
+    margin:-371px 0px 0px 900px;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+}
+
+.textbox {
+    margin-bottom: 15px;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    background: #333;
+    border: none;
+    color: #fff;
+}
+
+.btn {
+    width: 108%;
+    padding: 10px;
+    background: #f50000f5;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn:hover {
+    background: #d40000;
+}
+
+@media screen and (max-width: 600px) {
+    .topbar ul {
+        flex-direction: column;
+    }
+    .topbar ul li a {
+        text-align: left;
+    }
+    .slideshow-container {
+        margin: 0;
+    }
+}
+</style>
